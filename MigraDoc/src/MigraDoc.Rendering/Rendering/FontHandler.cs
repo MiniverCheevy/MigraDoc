@@ -31,8 +31,8 @@
 #define CACHE_FONTS_
 
 using System;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Pdf;
+using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel;
 
 namespace MigraDoc.Rendering

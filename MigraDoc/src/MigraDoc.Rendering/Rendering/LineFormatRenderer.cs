@@ -29,7 +29,7 @@
 #endregion
 
 using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
 
 namespace MigraDoc.Rendering

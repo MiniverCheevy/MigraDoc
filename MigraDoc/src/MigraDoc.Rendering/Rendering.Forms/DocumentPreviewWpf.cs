@@ -38,7 +38,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Windows;
 //using System.Windows.Forms;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Drawing;
 using MigraDoc.Rendering;
 
 namespace MigraDoc.Rendering.Forms

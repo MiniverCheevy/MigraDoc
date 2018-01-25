@@ -31,7 +31,7 @@
 using System;
 using System.Collections.Generic;
 using MigraDoc.DocumentObjectModel;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel.Tables;
 
 namespace MigraDoc.Rendering

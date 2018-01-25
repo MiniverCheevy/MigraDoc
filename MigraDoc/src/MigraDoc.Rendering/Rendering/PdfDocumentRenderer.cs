@@ -33,8 +33,8 @@ using System.Reflection;
 using System.IO;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.Rendering.Resources;
-using PdfSharp.Pdf;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Pdf;
+using Didstopia.PDFSharp.Drawing;
 
 namespace MigraDoc.Rendering
 {
@@ -56,17 +56,6 @@ namespace MigraDoc.Rendering
         /// </summary>
         /// <param name="unicode">If true Unicode encoding is used for all text. If false, WinAnsi encoding is used.</param>
         public PdfDocumentRenderer(bool unicode)
-        {
-            _unicode = unicode;
-        }
-
-        /// <summary>
-        /// Initializes a new instance of the <see cref="PdfDocumentRenderer" /> class.
-        /// </summary>
-        /// <param name="unicode">If true Unicode encoding is used for all text. If false, WinAnsi encoding is used.</param>
-        /// <param name="fontEmbedding">Obsolete parameter.</param>
-        [Obsolete("Must not specify an embedding option anymore.")]
-        public PdfDocumentRenderer(bool unicode, PdfFontEmbedding fontEmbedding)
         {
             _unicode = unicode;
         }

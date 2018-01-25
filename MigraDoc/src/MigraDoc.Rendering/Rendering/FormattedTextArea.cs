@@ -32,7 +32,7 @@ using System;
 using System.Collections.Generic;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Shapes.Charts;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Drawing;
 
 namespace MigraDoc.Rendering
 {

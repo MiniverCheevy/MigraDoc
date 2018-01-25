@@ -31,8 +31,8 @@
 using System;
 using System.Collections.Generic;
 using System.Globalization;
-using PdfSharp;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp;
+using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel;
 using MigraDoc.DocumentObjectModel.Internals;
 
@@ -400,7 +400,7 @@ namespace MigraDoc.Rendering
         {
             if (page < 1 || page > _pageCount)
 #if !SILVERLIGHT
-                throw new ArgumentOutOfRangeException("page", page, page.ToString(CultureInfo.InvariantCulture));
+                throw new Didstopia.PDFSharp.ArgumentOutOfRangeException("page", page, page.ToString(CultureInfo.InvariantCulture));
 #else
                 throw new PdfSharp.ArgumentOutOfRangeException("page", page, page.ToString(CultureInfo.InvariantCulture));
 #endif

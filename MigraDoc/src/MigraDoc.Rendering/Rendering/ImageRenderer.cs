@@ -31,7 +31,7 @@
 using System;
 using System.IO;
 using System.Diagnostics;
-using PdfSharp.Drawing;
+using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.Rendering.Resources;
 
@@ -346,7 +346,7 @@ namespace MigraDoc.Rendering
                 // We have to rely on the garbage collector to properly dispose the MemoryStream.
                 {
                     Stream stream = new MemoryStream(bytes);
-                    XImage image = XImage.FromStream(stream);
+                    XImage image = XImage.FromStream(() => stream);
                     return image;
                 }
 #else

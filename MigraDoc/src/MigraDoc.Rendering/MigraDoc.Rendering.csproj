@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MigraDoc</RootNamespace>
     <AssemblyName>MigraDoc.Rendering</AssemblyName>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -20,6 +21,7 @@
     <DefineConstants>TRACE;DEBUG;CORE;CORE_WITH_GDI</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,6 +31,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\MigraDoc.Rendering.xml</DocumentationFile>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>
@@ -45,16 +48,6 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\VersionInfo.cs" />
-    <Compile Include="Rendering.ChartMapper\AxisMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\ChartMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\DataLabelMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\FillFormatMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\FontMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\LegendMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\LineFormatMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\PlotAreaMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\SeriesCollectionMapper.cs" />
-    <Compile Include="Rendering.ChartMapper\XValuesMapper.cs" />
     <Compile Include="Rendering.Resources\Messages2.cs" />
     <Compile Include="Rendering.UnitTest\TestLayout.cs" />
     <Compile Include="Rendering.UnitTest\TestParagraphIterator.cs" />
@@ -63,9 +56,6 @@
     <Compile Include="Rendering.UnitTest\ValueDumper.cs" />
     <Compile Include="Rendering\Area.cs" />
     <Compile Include="Rendering\BordersRenderer.cs" />
-    <Compile Include="Rendering\ChartFormatInfo.cs" />
-    <Compile Include="Rendering\ChartRenderer.cs" />
-    <Compile Include="Rendering\ChartRenderInfo.cs" />
     <Compile Include="Rendering\ColorHelper.cs" />
     <Compile Include="Rendering\DocumentRenderer.cs" />
     <Compile Include="Rendering\enums\ElementAlignment.cs" />
@@ -115,11 +105,7 @@
     <Compile Include="Rendering\TopDownFormatter.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp.Charting\PdfSharp.Charting.csproj">
-      <Project>{6f98a822-41b0-4c7a-85a6-e95c1d3e88ef}</Project>
-      <Name>PdfSharp.Charting</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\PDFsharp\src\PdfSharp\PDFsharp.csproj">
+    <ProjectReference Include="..\..\..\PDFsharp\src\Didstopia.PDFSharp\Didstopia.PDFSharp.csproj">
       <Project>{5a6055bc-bf86-4fdd-9f62-0109db7a303b}</Project>
       <Name>PDFsharp</Name>
     </ProjectReference>
