@@ -5,7 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\PDFsharp\src\Didstopia.PDFSharp\Didstopia.PDFSharp.csproj" />
+    <PackageReference Include="Didstopia.PDFSharp" Version="1.0.0-beta4" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MigraDoc.DocumentObjectModel.Standard\MigraDoc.DocumentObjectModel.Standard.csproj">
 		<Name>MigraDoc.DocumentObjectModel</Name>
 	</ProjectReference>

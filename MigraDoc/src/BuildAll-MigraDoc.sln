@@ -2,13 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2024
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "!PDFsharp", "!PDFsharp", "{603BA43F-715B-471B-897B-871FD0EC35A8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDoc.DocumentObjectModel.Standard", "MigraDoc.DocumentObjectModel.Standard\MigraDoc.DocumentObjectModel.Standard.csproj", "{335AB537-0F95-4DA2-8DDC-F3C2AB2C9BAF}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Didstopia.PDFSharp", "..\..\PDFsharp\src\Didstopia.PDFSharp\Didstopia.PDFSharp.csproj", "{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.DocumentObjectModel.Standard", "MigraDoc.DocumentObjectModel.Standard\MigraDoc.DocumentObjectModel.Standard.csproj", "{335AB537-0F95-4DA2-8DDC-F3C2AB2C9BAF}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MigraDoc.Rendering.Standard", "MigraDoc.Rendering.Standard\MigraDoc.Rendering.Standard.csproj", "{E9CE190F-16CD-4EA0-8BA5-A68FFB09BB73}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MigraDoc.Rendering.Standard", "MigraDoc.Rendering.Standard\MigraDoc.Rendering.Standard.csproj", "{E9CE190F-16CD-4EA0-8BA5-A68FFB09BB73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,20 +20,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|Win32.ActiveCfg = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|ARM.ActiveCfg = Release|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|Win32.ActiveCfg = Release|Any CPU
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B}.Release|x86.ActiveCfg = Release|Any CPU
 		{335AB537-0F95-4DA2-8DDC-F3C2AB2C9BAF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{335AB537-0F95-4DA2-8DDC-F3C2AB2C9BAF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{335AB537-0F95-4DA2-8DDC-F3C2AB2C9BAF}.Debug|ARM.ActiveCfg = Debug|Any CPU
@@ -81,9 +63,6 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{5A6055BC-BF86-4FDD-9F62-0109DB7A303B} = {603BA43F-715B-471B-897B-871FD0EC35A8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {50D337B1-CECF-4C91-BFC9-987D09F955C5}
