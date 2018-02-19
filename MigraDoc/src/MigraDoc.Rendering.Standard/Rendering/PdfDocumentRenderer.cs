@@ -32,7 +32,7 @@ using System;
 using System.Reflection;
 using System.IO;
 using MigraDoc.DocumentObjectModel;
-using MigraDoc.Rendering.Resources;
+using MigraDoc.Rendering.Standard.Resources;
 using Didstopia.PDFSharp.Pdf;
 using Didstopia.PDFSharp.Drawing;
 

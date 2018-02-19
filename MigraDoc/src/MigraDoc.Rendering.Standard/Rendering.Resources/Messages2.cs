@@ -35,7 +35,7 @@ using System.Reflection;
 using System.Text.RegularExpressions;
 #endif
 
-namespace MigraDoc.Rendering.Resources
+namespace MigraDoc.Rendering.Standard.Resources
 {
     /// <summary>
     /// Provides diagnostic messages taken from the resources.
@@ -135,9 +135,9 @@ namespace MigraDoc.Rendering.Resources
                 if (_resourceManager == null)
                 {
 #if !NETFX_CORE
-                    _resourceManager = new ResourceManager("MigraDoc.Rendering.Resources.Messages", Assembly.GetExecutingAssembly());
+                    _resourceManager = new ResourceManager("MigraDoc.Rendering.Standard.Resources.Messages", Assembly.GetExecutingAssembly());
 #else
-                    _resourceManager = new ResourceManager("MigraDoc.Rendering.Resources.Messages", typeof(Messages2).GetTypeInfo().Assembly);
+                    _resourceManager = new ResourceManager("MigraDoc.Rendering.Standard.Resources.Messages", typeof(Messages2).GetTypeInfo().Assembly);
 #endif
                 }
                 return _resourceManager;

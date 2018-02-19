@@ -33,7 +33,7 @@ using System.IO;
 using System.Diagnostics;
 using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.Rendering.Resources;
+using MigraDoc.Rendering.Standard.Resources;
 
 namespace MigraDoc.Rendering
 {

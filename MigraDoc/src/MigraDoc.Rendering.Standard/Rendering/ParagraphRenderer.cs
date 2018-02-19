@@ -37,7 +37,7 @@ using Didstopia.PDFSharp.Pdf;
 using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel.Fields;
 using MigraDoc.DocumentObjectModel.Shapes;
-using MigraDoc.Rendering.Resources;
+using MigraDoc.Rendering.Standard.Resources;
 
 namespace MigraDoc.Rendering
 {

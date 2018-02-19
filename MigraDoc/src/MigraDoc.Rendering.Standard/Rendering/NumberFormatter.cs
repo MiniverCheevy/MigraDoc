@@ -31,7 +31,7 @@
 using System;
 using System.Diagnostics;
 using System.Globalization;
-using MigraDoc.Rendering.Resources;
+using MigraDoc.Rendering.Standard.Resources;
 
 namespace MigraDoc.Rendering
 {

@@ -36,7 +36,7 @@ using Didstopia.PDFSharp.Drawing;
 using MigraDoc.DocumentObjectModel.Visitors;
 using MigraDoc.DocumentObjectModel.Shapes;
 using MigraDoc.DocumentObjectModel.Tables;
-using MigraDoc.Rendering.Resources;
+using MigraDoc.Rendering.Standard.Resources;
 
 namespace MigraDoc.Rendering
 {
