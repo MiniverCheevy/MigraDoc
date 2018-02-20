@@ -62,7 +62,7 @@ namespace MigraDoc.Rendering
             _imageFilePath = _image.GetFilePath(_documentRenderer.WorkingDirectory);
             // The Image is stored in the string if path starts with "base64:", otherwise we check whether the file exists.
             if (!_imageFilePath.StartsWith("base64:") &&
-                !XImage.ExistsFile(_imageFilePath))
+                !File.Exists(_imageFilePath))
             {
                 _failure = ImageFailure.FileNotFound;
                 Debug.WriteLine(Messages2.ImageNotFound(_image.Name), "warning");
