@@ -350,11 +350,11 @@ namespace MigraDoc.Rendering
                     return image;
                 }
 #else
-                using (Stream stream = new MemoryStream(bytes))
-                {
-                    XImage image = XImage.FromStream(() => stream);
-                    return image;
-                }
+                //Let the ImageSourceImpl dispose the stream
+
+                Stream stream = new MemoryStream(bytes);
+                XImage image = XImage.FromStream(() => stream);
+                return image;
 #endif
             }
             return XImage.FromFile(uri);
